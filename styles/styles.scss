@@ -4,6 +4,7 @@ body {
 
 #alphabets {
     font-size: 2rem;
+    width: 100%;
 }
 
 main {
@@ -17,5 +18,11 @@ main {
         &:hover {
             font-weight: 600;
         }
+    }
+}
+
+@media (max-width: 780px) {
+    main {
+        grid-template-columns: repeat(1, 1fr) !important;
     }
 }
